@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    height: 100vh;
+    background-image: url("../images/anhkglv.jpg");  /* lưu ý đường dẫn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+}
+.logup_container {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logup_item {
+    width: 350px;
+    height: 550px;
+    border: #ede1e1 solid 1px;
+    border-radius: 7px;
+    background-color: #21393ad5;
+    margin: 50px 0 0 0;
+   
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    background: rgb(200, 202, 200);
+    border-radius: 5px;
+}
+
+p {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 10px;
+    
+}
+.logup_p {
+    margin: -20px 0 30px 0;
+    color: #ccc8c8;
+    
+}
+
+form label {
+    display: block;   /* khi display:block thì lable sẽ được chiếm hết không gian 1 dòng */
+    margin: 0 10px ;
+}
+input[type="email"] , input[type="password"], input[type="text"] {
+    width: 94%;
+    height:30px ;
+    border: #978989 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button {
+    width: 95%;
+    height: 35px;
+    margin: 10px;
+    border-radius: 7px;
+    background:rgb(92, 92, 204);
+    border: #978989 solid 0.5px;
+    color: #e3dada;
+}
+
+button:hover {
+    background:rgb(27, 22, 88) ;
+}
+
+.sign_up , a {
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.text_signup {
+    color: #e3dada;
+     font-size: 20px;
+}
+.img {
+   margin: 0 0 0 200px;
+background-size: cover;                 /* Phủ toàn bộ màn hình */
+}

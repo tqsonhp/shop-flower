@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+use App\Http\Controllers\LoginController;
+
+use App\Http\Controllers\LogupController;
+    
+Route::get('/login', [LoginController::class, 'showlogin']);
+
+Route::get('/logup', [LogupController::class, 'showlogup']);
