@@ -17,11 +17,18 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    // Khai báo tên bảng database chính xác ở đây
+    
+
+
     protected $fillable = [
         'name',
         'email',
         'password',
     ];
+
+    
+
 
     /**
      * The attributes that should be hidden for serialization.

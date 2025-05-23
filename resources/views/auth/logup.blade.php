@@ -19,28 +19,37 @@
 
             <p class="logup_p">Registration takes less than a minute but gives you full control over your orders.</p>
 
-            <form action="">
+            <form action="/logup" method="POST">
+
+                @csrf <!-- Token bảo mật Laravel -->
+
+                @if ($errors->any())
+                        <div style="color: rgb(77, 164, 207);">
+                            <strong>❌ Ngu vãi l*n:</strong>
+                            <ol>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ol>
+                        </div>
+                            @endif
+
 
                 <label for="name">Họ và Tên</label>
-                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="emai" name="emai" placeholder="Emai">
+                <input type="email" id="email" name="email" placeholder="Emai" required>
 
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="pass" placeholder="Passwrod">
+                <label for="password">Password</label>
+                <input type="password" id="pass" name="password" placeholder="Passwrod" required>
 
 
                 <label for="comfirm pass">Xác nhận Password</label>
-                <input type="password" id="comfirm" name="comfirm" placeholder="Comfirm Password"> 
+                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password" required>
+                {{-- cần đặt id là id="password_confirmation" để j ấy quên mất nhưng cần đặt id thế nào nhớ cmt lại ở đây --}}
 
-
-                
-
-
-               
-
-                <button>Sign in</button>
+                <button type="submit">Sign in</button>
 
                 <div class="sign_up">
                     <p>Already have an account?</p>

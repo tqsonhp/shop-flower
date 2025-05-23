@@ -18,9 +18,13 @@
                 <h2>Sign in</h2>
 
             <p class="login_p">Sign in to your account using email and password provided during registration.</p>
+                {{-- kiểm tra lỗi --}}
+ 
 
-            <form action="">
-
+            {{-- Gửi tới route "login" bằng phương thức POST --}}
+            <form action="{{ route('login')}}" method="POST">
+                     @csrf 
+                  {{-- rất quan trọng , nó có tác dụng chống giả mạo form --}}  
                 <label for="email">  📧 Email</label>
                 <input type="email" id="email" name="email" placeholder="Nhập email của bạn:" required>
 

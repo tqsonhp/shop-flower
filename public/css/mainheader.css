@@ -1,0 +1,99 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**/
+/* container chính của navbar */
+.navbar_container {
+    width: 100%;
+    display:flex ; /* căn cho các phần tử navbar_section cùng hàng ngang*/
+    justify-content: space-between; /* tạo ra khoảng  giữa các navbar_section*/
+    align-items: center; 
+    position: fixed;
+    background: #FBFEE7;
+    /* #5C2A2 */
+    padding: 10px 30px ;
+    border: #b1b1b1 solid 0.5px;
+    z-index: 1000;
+    
+}
+
+/* css chung cho các navbar_section*/
+.navabr_section {
+    display: flex;
+    align-items: center; /* căn giữa theo chiều dọc*/   
+}
+
+/* logo bên trái*/
+.logo {
+    width: 50px;  
+    height:50px;
+    border-radius: 50%;
+}
+.navbar_left{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+/*thanh tìm kiếm ở giữa */
+
+.navbar_center {
+  
+    justify-content: center;
+}
+
+.search_input {
+    padding: 10px;
+    height: 20px;
+    width: 500px;
+    border-radius: 10px;
+    border: #b1b1b1 solid 0.5px;
+  
+}
+
+/*phần biểu tượng bên phải(giỏ hàng và quản lí đăng nhập)*/
+
+.navbar_right {
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+    
+}
+
+.navbar_item {
+    font-size: 25px;
+}
+
+.menu_container {
+    background:rgb(200, 243, 216)  ;
+    position: relative;
+    top: 96px;
+    display:flex ;
+    height: 50px;
+    align-items: center;
+   
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+.menu_list a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+.menu_list {
+    padding: 20px;
+    position: relative;
+    
+}
+
+
+
+
+
+

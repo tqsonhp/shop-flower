@@ -1,0 +1,40 @@
+.product_container {
+    display: flex;
+    margin-top: 100px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 30px;
+
+}
+
+.product_item {
+    width: 250px;
+    border-radius: 10px;
+    border: #bfbaba solid 1px;
+    text-align: center;
+}
+
+
+.product_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: #bfbaba solid 1px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.product_info {
+    width: 250pxpx;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+
+
